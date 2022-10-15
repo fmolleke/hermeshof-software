@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { StammdatenComponent } from './stammdaten.component';
+import { DeckblattComponent } from './componenets/deckblatt/deckblatt.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: StammdatenComponent
+    pathMatch: 'full',
+    redirectTo: 'deckblatt'
+  },
+  {
+    path: 'deckblatt',
+    component: DeckblattComponent
   }
 ];
 

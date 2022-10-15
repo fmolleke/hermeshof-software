@@ -1,16 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
+import { SharedModule } from '../../shared/shared.module';
+import { DeckblattComponent } from './componenets/deckblatt/deckblatt.component';
 import { StammdatenRoutingModule } from './stammdaten-routing.module';
-import { StammdatenComponent } from './stammdaten.component';
 
 @NgModule({
-  declarations: [
-    StammdatenComponent
-  ],
-  imports: [
-    CommonModule,
-    StammdatenRoutingModule
-  ]
+  declarations: [DeckblattComponent],
+  imports: [CommonModule, SharedModule, StammdatenRoutingModule]
 })
-export class StammdatenModule { }
+export class StammdatenModule {}

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StammdatenComponent } from './stammdaten.component';
+import { DeckblattComponent } from './deckblatt.component';
 
-describe('StammdatenComponent', () => {
-  let component: StammdatenComponent;
-  let fixture: ComponentFixture<StammdatenComponent>;
+describe('DeckblattComponent', () => {
+  let component: DeckblattComponent;
+  let fixture: ComponentFixture<DeckblattComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ StammdatenComponent ]
+      declarations: [ DeckblattComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(StammdatenComponent);
+    fixture = TestBed.createComponent(DeckblattComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
