@@ -1,0 +1,8 @@
+<mat-nav-list class="sidebar-container" role="nav-list">
+  <a
+    mat-list-item
+    *ngFor="let menuItem of menuItems"
+    [routerLink]="[menuItem.link]"
+    >{{ menuItem.label }}</a
+  >
+</mat-nav-list>

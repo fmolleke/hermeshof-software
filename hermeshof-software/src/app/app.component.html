@@ -1,0 +1,29 @@
+<div class="page-container">
+  <mat-toolbar class="header-container" color="primary">
+    <button
+      mat-icon-button
+      class="menu-icon"
+      aria-label="Menu"
+      (click)="drawer.toggle()"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Meine App</span>
+
+    <span class="spacer"></span>
+
+    <button mat-icon-button aria-label="Profil">
+      <mat-icon>person</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <mat-drawer-container class="content-container">
+    <mat-drawer class="sidebar" #drawer mode="side" opened>
+      <app-sidebar></app-sidebar>
+    </mat-drawer>
+
+    <mat-drawer-content class="content"
+      ><router-outlet></router-outlet
+    ></mat-drawer-content>
+  </mat-drawer-container>
+</div>

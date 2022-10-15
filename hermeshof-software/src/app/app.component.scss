@@ -1,0 +1,23 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    .menu-icon {
+        padding-right: 1.6rem;
+    }
+
+    & > .content-container {
+        width: 100%;
+        flex: 1;
+
+        & > .sidebar {
+            width: 20rem;
+        }
+
+        & > .content {
+            padding: 1.6rem;
+        }
+    }
+}
